@@ -1,0 +1,150 @@
+#brand{
+    width: 50px;
+    height: 50px;
+}
+#homepage{
+    background-image: linear-gradient(15deg,rgba(32, 1, 34,0.8), rgba(111, 0, 0,0.8)),
+                      url("../navbar/navbar-background.jpg"); 
+    height: auto;
+    width: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#thanh-menu:hover{
+    background:  black;
+}
+#barContent{
+    margin: 10px;
+}
+.dropdown-menu{
+    background: linear-gradient(to bottom, #d3cce3, #e9e4f0);
+}
+#lala{
+    margin-top: 100px;
+}
+#header-tieude{
+    font-size: 5em;
+    color: whitesmoke;
+}
+#header-content{
+    font-size: 1.5em;
+    color: whitesmoke;
+}
+#maps{
+    
+}
+#maps-containter{
+    display: block;
+    text-align: center;
+}
+@media (max-width: 760px){
+    #header-tieude{
+        font-size: 3em;
+    }
+    #header-content{
+        font-size: 1em;
+    }
+    #lala{
+        margin: 50px
+    }
+
+    .contact-list{
+        text-align: left;
+    }
+
+    #footerrr{
+        text-align: center;
+    }
+    #maps{
+        width: 300px;
+        height: 500px;
+    }
+}
+.icon-function{
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    transition: transform .3s;
+    
+}
+
+.icon-function:hover{
+    transform: scale(1.5);
+}
+
+/* Content */
+.container{
+    margin: 50px auto;
+    font-family:  Arial, sans-serif;
+}
+.contact-list{
+    margin: 100px 0;
+}
+.circle-contact{
+    background-color: tomato;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 40px;
+    transition: transform .3s;
+}
+.circle-contact:hover{
+    transform: scale(1.5);
+}
+
+.contact-cell{
+    margin: 0 40px;
+}
+
+#noti{
+    background-image: linear-gradient(15deg,rgba(32, 1, 34,0.8), rgba(111, 0, 0,0.8)),
+                      url("../contact/thumb.jpg"); 
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 10px
+}
+
+
+/* footerr chân trang*/
+
+#footerrr{
+    background: linear-gradient(15deg,rgba(32, 1, 34,1), rgba(111, 0, 0,1));            
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: wheat;
+    padding: 50px 0 0 0;
+    
+}
+h5{
+    font-weight: bold;
+}
+.link-footer{
+    text-decoration: none;
+    color: wheat;
+}
+.link-footer:hover{
+    
+    color: whitesmoke;
+}
+hr{
+    border-color: wheat;
+}
+.contact-footer{
+    margin: 10px 0;
+}
+
+

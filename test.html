@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id="testA">5</button>
+    <div>a</div>
+    <h1  id="testB">sdddddddd</h1><h1 >sdddddddd</h1><h1>sdddddddd</h1><h1>sdddddddd</h1><h1>sdddddddd</h1><h1>sdddddddd</h1><h1>sdddddddd</h1><h1>sdddddddd</h1><h1>sdddddddd</h1><h1>sdddddddd</h1><h1>sdddddddd</h1><h1>sdddddddd</h1><h1>sdddddddd</h1><h1>sdddddddd</h1>
+    <script>
+        testB= document.getElementById('testB');
+        testB.addEventListener('scroll', (e) =>
+            {
+                
+             testB.style.color= "red";
+                
+            }
+        )
+        window.onscroll= () =>{
+            console.log("lalala");
+            document.getElementById("testB").style.color = "blue";
+            if(window.scrollY==0) document.getElementById("testB").style.color = "red";
+            console.log(window.scrollY);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="noidung"><button id="addBut">Them</button>
+    <ul id="la">
+       
+
+    </ul>
+    <script type="text/javascript">
+        
+        var to=[
+                'gau',
+                'meo'
+        ];
+        window.onload=init;
+        function init(){
+            var c= document.getElementById('addBut');
+            c.onclick=themF;
+            var d= document.getElementsByClassName('del');
+            // for(var i=0; i<d.length; i++){
+            //     (function(index){
+            //         d[i].onclick=function(){
+            //             alert(index);
+            //             l = index;
+            //         }
+                   
+            //     })(i);
+            //     //d[i].onclick=delF;
+            // }
+            // console.log(lol);
+
+        }
+       
+        function themF(){
+            var input= document.getElementById('noidung');
+            var nd= input.value;
+            to.push(nd);
+            resolve();
+        }
+        function delF(e){
+            var la= e.target;
+            var data= document.getElementsByClassName('lit');
+            to.splice(lol,1);
+            resolve();
+        }
+
+        function resolve(){
+            var htmlList= document.getElementById('la');
+            var content= to.map(function(item){
+                return '<li class="lit">' + item + '</li>'+ ' ' +'<button class="del">Xóa</button>';
+                // return '<li>' + item + '</li>';
+            });
+            console.log(content);
+            console.log(content.slice(''));
+            htmlList.innerHTML= content.join('');
+        }
+    
+        resolve();  
+    </script>
+   
+</body>
+</html>

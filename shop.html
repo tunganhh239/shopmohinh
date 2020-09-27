@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/shop.css">
+   
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" id="thanh-menu">
+        <a class="navbar-brand" href="home.html" ><img src="navbar\icon.jpg" alt="icon" id="brand"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barContent" aria-controls="barContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="barContent">
+            <ul class="navbar-nav mr-auto">
+               <li class="nav-item active" >
+                 <a class="nav-link" href="home.html">Trang chủ </a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#">Mô hình</a>
+               </li>
+               <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   Phụ kiện
+                 </a>
+                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                   <a class="dropdown-item" href="shop.html">Vũ khí</a>
+                   <a class="dropdown-item" href="shop.html">Mũ</a>
+                   <a class="dropdown-item" href="shop.html">Quần</a>
+                   <a class="dropdown-item" href="shop.html">Áo</a>
+                   <a class="dropdown-item" href="shop.html">Giày</a>
+                   <a class="dropdown-item" href="shop.html">Trang sức</a>
+                   <div class="dropdown-divider"></div>
+                   <a class="dropdown-item" href="shop.html">Bộ trang phục</a>
+                 </div>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="contact.html" >Liên hệ</a>
+               </li>
+             </ul>
+             <form class="form-inline">
+              <a href="login.html" class="icon-function"><img src="guide/login.png" alt="login"></a>
+              <a href="cart.html" class="icon-function"><img src="guide/cart.png" alt="cart"></a>
+               <input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm mô hình" aria-label="Search">
+               <button class="btn btn-outline-success " type="submit">Tìm</button>
+             </form>
+        </div>
+    </nav>
+    <div id="slideList" class="carousel slide" data-ride="carousel"  data-interval="1000">
+        <ol class="carousel-indicators">
+          <li data-target="#slideList" data-slide-to="0" class="active"></li>
+          <li data-target="#slideList" data-slide-to="1"></li>
+          <li data-target="#slideList" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100 anh-slide" src="shop/slide1.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100 anh-slide" src="shop/slide2.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100 anh-slide" src="shop/slide3.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#slideList" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#slideList" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="container">
+        <div class="row">
+            <div class="col-md-3" style="background-color: #FAFAFA;">
+                <div class="menu-theloai">
+                    <h5>Các nhân vật</h5>
+                    <hr>
+                    <div><a class="link-menuu" href="#">Đồ tể <span>(2)</span></a></div>
+                    <div><a class="link-menuu" href="#">Thợ săn tiền thưởng <span>(3)</span></a></div>
+                    <div><a class="link-menuu" href="#">Phù thủy <span>(9)</span></a></div>
+                    <div><a class="link-menuu" href="#">Cô bé mùa đông <span>(1)</span></a></div>
+                    <div><a class="link-menuu" href="#">Thuyền trưởng <span>(9)</span></a></div>
+                    <div><a class="link-menuu" href="#">Lực sĩ không gian <span>(9)</span></a></div>
+                    <div><a class="link-menuu" href="#">Quái vật biển sâu <span>(9)</span></a></div>
+                </div>
+                <div class="menu-theloai">
+                  <h5>Các phụ kiện</h5>
+                  <hr>
+                  <div><a class="link-menuu" href="#">Vũ khí <span>(2)</span></a></div>
+                  <div><a class="link-menuu" href="#">Mũ <span>(3)</span></a></div>
+                  <div><a class="link-menuu" href="#">Quần<span>(9)</span></a></div>
+                  <div><a class="link-menuu" href="#">Áo <span>(1)</span></a></div>
+                  <div><a class="link-menuu" href="#">Giày <span>(9)</span></a></div>
+                  <div><a class="link-menuu" href="#">Trang sức<span>(9)</span></a></div>
+                  <div><a class="link-menuu" href="#">Bộ Trang phục <span>(9)</span></a></div>
+                </div>
+                <div class="menu-theloai">
+                    <h5>Kích cỡ mô hình</h5>
+                    <hr>
+                    <div><a class="link-menuu" href="#">To<span>(10)</span></a></div>
+                    <div><a class="link-menuu" href="#">Nhỏ<span>(20)</span></a></div>
+                </div>
+                <div class="menu-theloai">
+                    <h5>Giá cả</h5>
+                    <hr>
+                    <div><a class="link-menuu" href="#">Dưới 100.000đ</a></div>
+                    <div><a class="link-menuu" href="#">Trên 100.000đ</a></div>
+                    <div><a class="link-menuu" href="#">Dưới 500.000đ</a></div>
+                    <div><a class="link-menuu" href="#">Trên 500.000đ</a></div>
+                    <div><a class="link-menuu" href="#">Trên 1.000.000đ</a></div>
+                </div>
+                <div class="menu-theloai">
+                    <h5>Hãng</h5>
+                    <hr>
+                    <div><a class="link-menuu" href="#">Valve</a></div>
+                    <div><a class="link-menuu" href="#">Blizzard</a></div>
+                    <div><a class="link-menuu" href="#">Ubisoft</a></div>
+                </div>
+                <div class="menu-theloai">
+                    <img id="anh-menu" src="shop/anhmenu.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-9" >
+                <div class="row justify-content-between">
+                    <div class="col-md-4">
+                        Đang hiện thị 9 trong 23 sản phẩm
+                    </div>
+                    <div class="col-md-2">
+                        <div class="dropdown">
+                            <button class="btn btn-light dropdown-toggle" type="button" id="listSapXep" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Sắp xếp
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="listSapXep">
+                              <a class="dropdown-item" href="#">Sắp xếp từ A-Z</a>
+                              <a class="dropdown-item" href="#">Sắp xếp từ Z-A</a>
+                              <a class="dropdown-item" href="#">Giá từ cao đến thấp</a>
+                              <a class="dropdown-item" href="#">Giá từ thấp đến cao</a>
+                              <a class="dropdown-item" href="#">Sản phẩm mới nhập</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row justify-content-center">
+                    <div class="col-md-3 product-item">
+                      <a href="#">
+                        <div class="product-khunganh">
+                            <img class="product-anh" src="shop/bounty.jpg" alt="anh">
+                        </div>
+                        <div class="product-title">
+                            <h6>Mô hình thợ săn tiền thưởng</h6>
+                            <div class="product-price">150.000đ</div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-md-3 product-item">
+                      <a href="#">
+                        <div class="product-khunganh">
+                            <img class="product-anh" src="shop/pudge.jpg" alt="anh">
+                        </div>
+                        <div class="product-title">
+                            <h6>Mô hình đồ tể</h6>
+                            <div class="product-price">150.000đ</div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-md-3 product-item">
+                      <a href="detail.html">
+                        <div class="product-khunganh">
+                            <img class="product-anh" src="shop/cm.png" alt="anh">
+                        </div>
+                        <div class="product-title">
+                            <h6>Mô hình cô bé mùa đông</h6>
+                            <div class="product-price">150.000đ</div>
+                        </div>
+                      </a>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-3 product-item">
+                      <a href="#">
+                        <div class="product-khunganh">
+                            <img class="product-anh" src="shop/miranda.jpg" alt="anh">
+                        </div>
+                        <div class="product-title">
+                            <h6>Mô hình cô gái bắn cung</h6>
+                            <div class="product-price">150.000đ</div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-md-3 product-item">
+                      <a href="#">
+                        <div class="product-khunganh">
+                            <img class="product-anh" src="shop/slark.jpg" alt="anh">
+                        </div>
+                        <div class="product-title">
+                            <h6>Mô hình chú cóc giận dữ</h6>
+                            <div class="product-price">150.000đ</div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-md-3 product-item">
+                      <a href="#">
+                        <div class="product-khunganh">
+                            <img class="product-anh" src="shop/tiny.png" alt="anh">
+                        </div>
+                        <div class="product-title">
+                            <h6>Mô hình người đá tý hon </h6>
+                            <div class="product-price">150.000đ</div>
+                        </div>
+                      </a>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-3 product-item">
+                      <a href="#">
+                        <div class="product-khunganh">
+                            <img class="product-anh" src="shop/void.png" alt="anh">
+                        </div>
+                        <div class="product-title">
+                            <h6>Mô hình lực sĩ thời gian</h6>
+                            <div class="product-price">150.000đ</div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-md-3 product-item">
+                      <a href="#">
+                        <div class="product-khunganh">
+                            <img class="product-anh" src="shop/combo.jpg" alt="anh">
+                        </div>
+                        <div class="product-title">
+                            <h6>Combo 7 loại mô hình bất kỳ</h6>
+                            <div class="product-price">1.000.000đ</div>
+                        </div>
+                      </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="container-fluid" id="footerrr">
+        <div class="row justify-content-center" >
+            <div class="col-md-3 " class="content-footer">
+                <h5>Mạng xã hội</h5>
+                <div><a class="link-footer" href="#">Facebook</a></div>
+                <div><a class="link-footer" href="#">Instagram</a></div>
+                <div><a class="link-footer" href="#">Twitter</a></div>
+               
+            </div>
+            <div class="col-md-4" class="content-footer">
+                <h5>Liên hệ</h5>
+                <div class="contact-footer"><img src="navbar/map.png" alt="map"> Số 2, Trần Phú, Hà Đông</div>
+                <div class="contact-footer"><img src="navbar/phone.png" alt="dien thoai"> 0123456789</div>
+            </div>
+            <div class="col-md-3">
+                <h5>Đưỡng dẫn nhanh</h5>
+                <div><a class="link-footer" href="#">Trang chủ</a></div>
+                <div><a class="link-footer" href="#">Mô hình</a></div>
+                <div><a class="link-footer" href="#">Phụ kiện cho mô hình</a></div>
+                <div><a class="link-footer" href="#">Liên hệ</a></div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-copyright text-center " >
+          Bản quyền thuộc về Hoàng Tùng Anh
+        </div>
+    </div>
+</body>
+</html>

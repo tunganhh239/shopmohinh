@@ -1,0 +1,135 @@
+
+#brand{
+    width: 50px;
+    height: 50px;
+}
+#homepage{
+    background-image: linear-gradient(15deg,rgba(32, 1, 34,0.8), rgba(111, 0, 0,0.8)),
+                      url("../navbar/navbar-background.jpg"); 
+    height: auto;
+    width: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#thanh-menu:hover{
+    background:  black;
+}
+#barContent{
+    margin: 10px;
+}
+.dropdown-menu{
+    background: linear-gradient(to bottom, #d3cce3, #e9e4f0);
+}
+#lala{
+    margin-top: 100px;
+}
+#header-tieude{
+    font-size: 5em;
+    color: whitesmoke;
+}
+#header-content{
+    font-size: 1.5em;
+    color: whitesmoke;
+}
+
+@media (max-width: 760px){
+    #header-tieude{
+        font-size: 3em;
+    }
+    #header-content{
+        font-size: 1em;
+    }
+    #lala{
+        margin: 50px
+    }
+     /* item */
+    .items{
+        text-align: center;
+    }
+    /* footer */
+    #footerrr{
+        text-align: center;
+    }
+}
+.icon-function{
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    transition: transform .3s;
+    
+}
+
+.icon-function:hover{
+    transform: scale(1.5);
+}
+
+/* content */
+
+.product-image{
+    width: 150px;
+    height: 150px;
+}
+
+body{
+    background-color: #FAFAFA;
+}
+
+.container{
+    margin: 50px auto;
+    
+}
+.product-preview{
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+#cart-total{
+    background-color: white ;
+    height: auto;
+    border-radius: 10px;
+    padding: 20px;
+    
+}
+#sub-price{
+    color: red;
+    font-size: 20px;
+}
+
+#cart-submit{
+    margin: 10px 0px;
+}
+
+/* footer */
+#footerrr{
+    background: linear-gradient(15deg,rgba(32, 1, 34,1), rgba(111, 0, 0,1));            
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: wheat;
+    padding: 50px 0 0 0;
+    
+}
+h5{
+    font-weight: bold;
+}
+.link-footer{
+    text-decoration: none;
+    color: wheat;
+}
+.link-footer:hover{
+    
+    color: whitesmoke;
+}
+hr{
+    border-color: wheat;
+}
+.contact-footer{
+    margin: 10px 0;
+}
